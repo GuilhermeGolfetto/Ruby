@@ -244,3 +244,49 @@ pets["Katy Perry"] = "dog"
 puts pets["Katy Perry"]
 
 
+languages = ["HTML", "CSS", "JavaScript", "Python", "Ruby"]
+
+languages.each { |element| puts element }
+
+s = [["ham", "swiss"], ["turkey", "cheddar"], ["roast beef", "gruyere"]]
+
+s.each { |sub_array|
+    sub_array.each { | element| 
+        puts element}
+}
+
+secret_identities = {
+  "O Batman" => "Bruce Wayne",
+  "Superman" => "Clark Kent",
+  "Mulher Maravilha" => "Diana Prince",
+  "Freakazoid" => "Dexter Douglas"
+}
+
+secret_identities.each do |super_hero, identitie|
+    puts "#{super_hero}: #{identitie}"
+end
+
+
+
+my_array = [
+	[2,4,6,8],
+	[1,3,5,7,9]
+]
+
+
+my_hash = Hash.new
+my_hash["Apple"] = "Fruit"
+my_hash["Lemon"] = "Fruit"
+
+lunch_order = {
+  "Ryan" => "sopa",
+  "Eric" => "hamburger",
+  "Jimmy" => "sanduíche",
+  "Sasha" => "salada",
+  "Cole" => "taco"
+}
+
+lunch_order.each do
+    |nome,comida|
+    puts "#{comida}"
+end
