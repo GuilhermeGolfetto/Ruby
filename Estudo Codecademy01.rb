@@ -290,3 +290,48 @@ lunch_order.each do
     |nome,comida|
     puts "#{comida}"
 end
+
+#programa histograma
+puts "Digite seu texto:"
+text = gets.chomp
+words =text.split
+frequencies = Hash.new(0)
+words.each do
+	|word|
+	frequencies["#{word}"] += 1
+end
+frequencies = frequencies.sort_by do
+	|word,count|
+	count
+end
+frequencies.reverse!
+frequencies.each do
+    |word, count|
+    puts word + " " + count.to_s
+end
+
+#métodos
+def greeting
+	puts "Olá Mundo dos Métodos"
+end
+
+greeting
+
+
+def cubertino(n)
+  puts n ** 3
+end
+
+cubertino(8)
+
+#multiplos parametros
+def what_up(greeting, *bros)
+  bros.each { |bro| puts "#{greeting}, #{bro}!" }
+end
+ 
+what_up("E aí", "Justin", "Ben", "Kevin Sorbo")
+
+def add(n1,n2)
+	return n1+n2
+end
+
