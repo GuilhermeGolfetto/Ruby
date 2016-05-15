@@ -1,7 +1,7 @@
 #!/bin/env ruby
 # encoding: utf-8
 def da_boas_vindas
-	puts "Bem vindo ao jogo da advinhação"
+	puts "Bem vindo ao jogo da advinhação!"
 	puts "Qual o seu nome?"
 	nome = gets.strip
 	puts "\n\n\n\nVamos começar o jogo para você, #{nome}" 
